@@ -21,11 +21,6 @@ public class DriverRepository {
         WebDriverManager.chromedriver().setup();
     }
 
-    //    public static void instanceWebBrowser() {
-//        webDriver = new ChromeDriver();
-//        DRIVERS.set(webDriver);
-//
-//    }
     public static void instanceWebBrowser() {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments(
@@ -35,9 +30,10 @@ public class DriverRepository {
         webDriver = new ChromeDriver(chromeOptions);
         DRIVERS.set(webDriver);
         DRIVERS.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
     }
 
-    public static void closeBrowser() {
+     public static void closeBrowser() {
         webDriver.quit();
     }
 
