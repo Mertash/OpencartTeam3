@@ -7,82 +7,82 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class CategoriesHeaderPage extends BasePage {
     //////////////////////////////
     /* Desktops category button*/
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[1]/a")//Head Desktops button
+    @FindBy(xpath = ".//*[@class='nav navbar-nav']//a[contains(text(),'Desktops') and @class='dropdown-toggle']")//Head Desktops button
     private WebElement desktopsButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[1]/div/div/ul/li[1]/a")//PC button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'PC (0)')]")//PC button
     private WebElement pcCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[1]/div/div/ul/li[2]/a")//Mac button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'Mac (1)')]")//Mac button
     private WebElement macCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[1]/div/a")//All Desktops button
+    @FindBy(xpath = ".//*[@class='dropdown-menu']//a[contains(text(),'Show') and contains(@href,'path=20')]")//All Desktops button
     private WebElement allDesktopsCategoryButton;
 
     //////////////////////////////
     /*Laptops & Notebooks category button */
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[2]/a")//Head Laptops & Notebooks button
+    @FindBy(xpath = ".//*[@class='nav navbar-nav']//a[contains(text(),'Laptops & Notebooks') and @class='dropdown-toggle']")//Head Laptops & Notebooks button
     private WebElement laptopsNotebooksButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[2]/div/div/ul/li[1]/a")//Macs button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'Macs (0)')]")//Macs button
     private WebElement MacsCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[2]/div/div/ul/li[2]/a")//Windows button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'Windows (0)')]")//Windows button
     private WebElement windowsCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[2]/div/a")//All Laptops & Notebooks button
+    @FindBy(xpath = ".//*[@class='dropdown-menu']//a[contains(text(),'Show') and contains(@href,'path=18')]")//All Laptops & Notebooks button
     private WebElement allLaptopsNotebooksCategoryButton;
 
     //////////////////////////////
     /*Components category button */
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[3]/a")//Head Components button
+    @FindBy(xpath = ".//*[@class='nav navbar-nav']//a[contains(text(),'Components')and @class='dropdown-toggle']")//Head Components button
     private WebElement componentsButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[3]/div/div/ul/li[1]/a")//Mice and Trackballs button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'Mice and Trackballs (0)')]")//Mice and Trackballs button
     private WebElement miceTrackballsCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[3]/div/div/ul/li[2]/a")//Monitors button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'Monitors (2)')]")//Monitors button
     private WebElement monitorsCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[3]/div/div/ul/li[3]/a")//Printers button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'Printers (0)')]")//Printers button
     private WebElement printersCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[3]/div/div/ul/li[4]/a")//Scanners button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'Scanners (0)')]")//Scanners button
     private WebElement scannersCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[3]/div/div/ul/li[5]/a")//Web Cameras button
+    @FindBy(xpath = ".//*[@class='list-unstyled']//a[contains(text(),'Web Cameras (0)')]")//Web Cameras button
     private WebElement webCamerasCategoryButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[3]/div/a")//All Components button
+    @FindBy(xpath = ".//*[@class='dropdown-menu']//a[contains(text(),'Show') and contains(@href,'path=25')]")//All Components button
     private WebElement allComponentsCategoryButton;
 
     //////////////////////////////
     /*Tablets category button */
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[4]/a")//Head Tablets button
+    @FindBy(xpath = ".//*[@class='nav navbar-nav']//a[contains(text(),'Tablets')and contains(@href,'path=57')]")//Head Tablets button
     private WebElement tabletsButton;
 
     //////////////////////////////
     /*Software category button */
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[5]/a")//Head Software button
+    @FindBy(xpath = ".//*[@class='nav navbar-nav']//a[contains(text(),'Software')and contains(@href,'path=17')]")//Head Software button
     private WebElement softwareButton;
 
     //////////////////////////////
     /*Phones & PDAs category button */
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[6]/a")//Head Phones & PDAs button
+    @FindBy(xpath = ".//*[@class='nav navbar-nav']//a[contains(text(),'Phones & PDAs')and contains(@href,'path=24')]")//Head Phones & PDAs button
     private WebElement phonesPDAsButton;
 
     //////////////////////////////
     /*Cameras category button */
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[7]/a")//Head Cameras button
+    @FindBy(xpath = ".//*[@class='nav navbar-nav']//a[contains(text(),'Cameras')and contains(@href,'path=33')]")//Head Cameras button
     private WebElement camerasButton;
 
     //////////////////////////////
     /*MP3 Players category button */
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[8]/a")//Head MP3 Players button
+    @FindBy(xpath = ".//*[@class='nav navbar-nav']//a[contains(text(),'MP3 Players')and @class='dropdown-toggle']")//Head MP3 Players button
     private WebElement mp3PlayersButton;
 
-    @FindBy(xpath = ".//*[@id='menu']/div[2]/ul/li[8]/div/a")//All MP3 Players button
+    @FindBy(xpath = ".//*[@class='dropdown-menu']//a[contains(text(),'Show') and contains(@href,'path=34')]")//All MP3 Players button
     private WebElement allMp3PlayersCategoryButton;
 
     //////////////////////////////

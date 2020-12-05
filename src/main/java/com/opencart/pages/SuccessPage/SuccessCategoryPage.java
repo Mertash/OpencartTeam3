@@ -44,7 +44,7 @@ public class SuccessCategoryPage extends BasePage {
     @FindBy(xpath = ".//*[@id='content']/h2")
     private WebElement webCamerasCategoryTitle;
 
-    @FindBy(xpath = ".//*[@id='content/]/h2")
+    @FindBy(xpath = ".//*[@id='content']/h2")
     private WebElement allComponentsCategoryTitle;
 
     /* Tablets success */
@@ -65,7 +65,7 @@ public class SuccessCategoryPage extends BasePage {
 
     /* MP3 Players success */
     @FindBy(xpath = ".//*[@id='content']/h2")
-    private WebElement mp3PlayersCategoryTitle;
+    private WebElement allMp3PlayersCategoryTitle;
 
 
     ////////Getters Desktops success ////////
@@ -78,9 +78,7 @@ public class SuccessCategoryPage extends BasePage {
         return macCategoryTitle;
     }
 
-    public WebElement getAllDesktopsCategoryTitle() {
-        return allDesktopsCategoryTitle;
-    }
+    public WebElement getAllDesktopsCategoryTitle() { return allDesktopsCategoryTitle; }
 
     ////////Getters Laptops & Notebooks success ////////
 
@@ -119,9 +117,7 @@ public class SuccessCategoryPage extends BasePage {
         return webCamerasCategoryTitle;
     }
 
-    public WebElement getAllComponentsCategoryTitle() {
-        return allComponentsCategoryTitle;
-    }
+    public WebElement getAllComponentsCategoryTitle() { return allComponentsCategoryTitle; }
 
     ////////Getters Tablets success ////////
 
@@ -148,8 +144,8 @@ public class SuccessCategoryPage extends BasePage {
 
     ////////MP3 Players Cameras success ////////
 
-    public WebElement getMp3PlayersCategoryTitle() {
-        return mp3PlayersCategoryTitle;
+    public WebElement getAllMp3PlayersCategoryTitle() {
+        return allMp3PlayersCategoryTitle;
     }
 
 }

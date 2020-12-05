@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" verbose="3">
+    <test name="Test Suite End to End flow tests">
+<!--        <packages>-->
+<!--            <package name="team3test.dimaTest"></package>-->
+<!--        </packages>-->
+        <classes>
+            <class name="team3test.UserSearchTest"></class>
+        </classes>
+    </test>
+</suite>
